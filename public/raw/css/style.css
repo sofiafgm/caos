@@ -1,0 +1,53 @@
+header {
+    margin: 0px 0px 0px 0px;
+}
+
+h1 {
+    color: red;
+}
+
+nav {
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+}
+
+.lista-navegacion {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.lista-navegacion li {
+    list-style: none;
+    display: inline-block; 
+    margin-right: 150px;
+    padding: 30px;
+}
+
+.lista-navegacion li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-redes {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+}
+
+.lista-redes {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.lista-redes li {
+    list-style: none;
+    display: inline-block; 
+}
+
+
+.lista-redes img {
+    height: 32px;
+    width: 32px;
+}
