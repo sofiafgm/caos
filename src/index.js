@@ -11,7 +11,7 @@ import Gallery from './Views/Gallery'
 // stylesheet
 import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.body)
 
 root.render(
   <React.StrictMode>
