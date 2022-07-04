@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #333333;
 }
 
 header {
@@ -13,6 +14,19 @@ h1 {
 nav {
     background-color: black;
     margin: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
 }
 
 .lista-navegacion {
@@ -30,14 +44,22 @@ nav {
 
 .lista-navegacion li a {
     color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
 }
 
 .section-redes {
     display: flex;
     justify-content: flex-end;
-    background-color: black;
-    color: white;
+    background-color: white;
 }
 
 .lista-redes {
@@ -54,4 +76,24 @@ nav {
 .lista-redes img {
     height: 32px;
     width: 32px;
+}
+
+.banner-img {
+    background-image: url("../images/oso.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.locations {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.contacto {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
 }

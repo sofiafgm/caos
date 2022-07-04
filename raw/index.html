@@ -1,114 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <title>index</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <ul class="lista-navegacion">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/about.html">Conócenos</a></li>
-                <li><a href="pages/products.html">Productos</a></li>
-                <li><a href="img/logo"></a></li>
-                <li><a href="pages/gallery.html">Galeria</a></li>
-                <li><a href="pages/tatoo.html">Tatuajes</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="lista-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/about.html">¿Quiénes somos?</a></li>
+          <li><a href="pages/products.html">Productos</a></li>
+          <li>
+            <a href="index.html"
+              ><img class="logo" src="svgs/logo.svg" alt="Logo de la marca" />
+            </a>
+          </li>
+          <li><a href="pages/gallery.html">Galeria</a></li>
+          <li><a href="pages/tatoo.html">Tatuajes</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="section-redes">
-        <ul class="lista-redes">
-            <li><a href="https://www.instagram.com/uncaosorganizado/">
-                <img src="svgs/ig.svg" alt="Logo de Instagram">
-            </a></li>
-            <li>
-                <img src="svgs/fb.svg" alt="Logo de Facebook">
-            </li>
-            <li>
-                <img src="svgs/tk.svg" alt="Logo de TikTok">
-            </li>
-            <li>
-                <img src="svgs/yt.svg" alt="Logo de Youtube">
-            </li>
-        </ul>
+      <ul class="lista-redes">
+        <li>
+          <a href="https://www.instagram.com/uncaosorganizado/">
+            <img src="svgs/ig.svg" alt="Logo de Instagram" />
+          </a>
+        </li>
+        <li>
+          <img src="svgs/fb.svg" alt="Logo de Facebook" />
+        </li>
+        <li>
+          <img src="svgs/tk.svg" alt="Logo de TikTok" />
+        </li>
+        <li>
+          <img src="svgs/yt.svg" alt="Logo de Youtube" />
+        </li>
+      </ul>
     </section>
 
-    <section>
-        <img src="images/oso.jpg" alt="Ilustracion de Osos">
+    <section class="banner-img"></section>
+
+    <section class="locations">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid id, qui quidem molestias, fugiat recusandae ab? Ipsa corrupti veniam voluptatibus.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.855340355148!2d-103.35870988571858!3d20.675463505122472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b137659278b3%3A0xc604925cc03e8ad1!2zRWwgYmHDumw!5e0!3m2!1ses!2smx!4v1656369158405!5m2!1ses!2smx"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
-    <section>
-        <h4>Aqui van las ubicaciones de los puntos de venta</h4> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.855340355148!2d-103.35870988571858!3d20.675463505122472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b137659278b3%3A0xc604925cc03e8ad1!2zRWwgYmHDumw!5e0!3m2!1ses!2smx!4v1656369158405!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <section class="contacto">
+      <!-- Aún no sé en qué lugar posicionar el formulario, así que o puse aquó como una sección más -->
+      <form>
+        <fieldset>
+          <legend>Contáctanos para adquirir nuestros productos</legend>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" />
+          </div>
 
-    <section> <!-- Aún no sé en qué lugar posicionar el formulario, así que o puse aquó como una sección más -->
-        <form>
-            <fieldset>
-                <legend>Contáctanos para adquirir nuestros productos</legend>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-            </div>
+          <div>
+            <h4>Género</h4>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="genero" id="hombre" />
+          </div>
 
-            <div>
-                <h4>Género</h4>
-                <label for="hombre">Hombre</label>
-                <input type="radio" name="genero" id="hombre">
-            </div>
+          <div>
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="genero" id="mujer" />
+          </div>
 
-            <div>
-                <label for="mujer">Mujer</label>
-                <input type="radio" name="genero" id="mujer">
-            </div>
+          <div>
+            <label for="correo">email</label>
+            <input type="email" id="correo" />
+          </div>
 
-            <div>
-                <label for="correo">email</label>
-                <input type="email" id="correo">
-            </div>
+          <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" />
+          </div>
 
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono">
-            </div>
+          <div>
+            <label for="desplegable">Elije el producto</label>
+            <select id="">
+              <option value="">Agenda</option>
+              <option value="">Taza</option>
+              <option value="">Separador</option>
+            </select>
+          </div>
 
-            <div>
-                <label for="desplegable">Elije el producto</label>
-                    <select id="">
-                        <option value="">Agenda</option>
-                        <option value="">Taza</option>
-                        <option value="">Separador</option>
-                    </select>
-                </div>
+          <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+          </div>
 
-            <div>
-                <label for="comentarios">Comentarios</label>
-                <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
-            </div>
+          <div>
+            <h4>Quiero recibir promociones</h4>
+            <label for="opcion1">si</label>
+            <input type="checkbox" id="opcion1" />
+            <label for="opcion2">no</label>
+            <input type="checkbox" id="opcion2" />
+          </div>
 
-            <div>
-                <h4>Quiero recibir promociones</h4>
-                <label for="opcion1">si</label>
-                <input type="checkbox" id="opcion1">
-                <label for="opcion2">no</label>
-                <input type="checkbox" id="opcion2">
-            </div>
-
-            <div>
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Limpiar formulario">
-            </div>
+          <div>
+            <input type="submit" value="Enviar formulario" />
+            <input type="reset" value="Limpiar formulario" />
+          </div>
         </fieldset>
-        </form>
+      </form>
     </section>
 
     <footer>
-        <p>Copyright &copy; 2022</p>
+      <p>Copyright &copy; 2022</p>
     </footer>
-</body>
+  </body>
 </html>
