@@ -1,5 +1,9 @@
+body {
+    margin: 0;
+}
+
 header {
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 h1 {
@@ -8,19 +12,19 @@ h1 {
 
 nav {
     background-color: black;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 .lista-navegacion {
     display: flex;
     justify-content: space-around;
     margin: 0;
+    padding: 0;
 }
 
 .lista-navegacion li {
     list-style: none;
-    display: inline-block; 
-    margin-right: 150px;
+    display: inline-block;
     padding: 30px;
 }
 
@@ -38,12 +42,12 @@ nav {
 
 .lista-redes {
     margin: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 }
 
 .lista-redes li {
     list-style: none;
-    display: inline-block; 
+    display: inline-block;
 }
 
 
