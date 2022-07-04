@@ -5,22 +5,22 @@ const Social = () => (
     <ul className="lista-redes">
       <li>
         <a href="https://www.instagram.com/uncaosorganizado/">
-          <img src={process.env.PUBLIC_URL + '/svgs/ig.svg'} alt="Logo de Instagram" />
+          <img src={process.env.PUBLIC_URL + '/svgs/ig.svg'} alt="Instagram" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/uncaosorganizado/">
-          <img src={process.env.PUBLIC_URL + '/svgs/fb.svg'} alt="Logo de Facebook" />
+        <a href="https://www.facebook.com/uncaosorganizado/">
+          <img src={process.env.PUBLIC_URL + '/svgs/fb.svg'} alt="Facebook" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/uncaosorganizado/">
-          <img src={process.env.PUBLIC_URL + '/svgs/tk.svg'} alt="Logo de TikTok" />
+        <a href="https://www.titok.com/uncaosorganizado/">
+          <img src={process.env.PUBLIC_URL + '/svgs/tk.svg'} alt="TikTok" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/uncaosorganizado/">
-          <img src={process.env.PUBLIC_URL + '/svgs/yt.svg'} alt="Logo de Youtube" />
+        <a href="https://www.youtube.com/uncaosorganizado/">
+          <img src={process.env.PUBLIC_URL + '/svgs/yt.svg'} alt="Youtube" />
         </a>
       </li>
     </ul>

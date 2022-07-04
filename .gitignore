@@ -24,6 +24,7 @@ yarn-error.log*
 
 # images
 /public/images
+/src/assets/images
 
 # intelij settings
 /.idea

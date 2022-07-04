@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,13 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Shadows+Into+Light&amp;family=Shadows+Into+Light&amp;display=swap"
       rel="stylesheet"
     />
     <title>index</title>
@@ -24,17 +18,17 @@
     <header>
       <nav>
         <ul class="lista-navegacion">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/about.html">¿Quiénes somos?</a></li>
-          <li><a href="pages/products.html">Productos</a></li>
+          <li><a aria-current="page" class="active" href="/">Inicio</a></li>
+          <li><a class="" href="/about">¿Quiénes somos?</a></li>
+          <li><a class="" href="/products">Productos</a></li>
           <li>
-            <a href="index.html"
-              ><img class="logo" src="svgs/logo.svg" alt="Logo de la marca" />
-            </a>
+            <a class="" href="/products"
+              ><img class="logo" src="svgs/logo.svg" alt="Un caos organizado"
+            /></a>
           </li>
-          <li><a href="pages/gallery.html">Galeria</a></li>
-          <li><a href="pages/tatoo.html">Tatuajes</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a class="" href="/gallery">Galería</a></li>
+          <li><a class="" href="/tattoo">Tatuajes</a></li>
+          <li><a class="" href="/contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -42,18 +36,24 @@
     <section class="section-redes">
       <ul class="lista-redes">
         <li>
-          <a href="https://www.instagram.com/uncaosorganizado/">
-            <img src="svgs/ig.svg" alt="Logo de Instagram" />
-          </a>
+          <a href="https://www.instagram.com/uncaosorganizado/"
+            ><img src="/svgs/ig.svg" alt="Instagram"
+          /></a>
         </li>
         <li>
-          <img src="svgs/fb.svg" alt="Logo de Facebook" />
+          <a href="https://www.facebook.com/uncaosorganizado/"
+            ><img src="/svgs/fb.svg" alt="Facebook"
+          /></a>
         </li>
         <li>
-          <img src="svgs/tk.svg" alt="Logo de TikTok" />
+          <a href="https://www.titok.com/uncaosorganizado/"
+            ><img src="/svgs/tk.svg" alt="TikTok"
+          /></a>
         </li>
         <li>
-          <img src="svgs/yt.svg" alt="Logo de Youtube" />
+          <a href="https://www.youtube.com/uncaosorganizado/"
+            ><img src="/svgs/yt.svg" alt="Youtube"
+          /></a>
         </li>
       </ul>
     </section>
@@ -62,82 +62,20 @@
 
     <section class="locations">
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid id, qui quidem molestias, fugiat recusandae ab? Ipsa corrupti veniam voluptatibus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid id, qui quidem
+        molestias, fugiat recusandae ab? Ipsa corrupti veniam voluptatibus.
       </p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.855340355148!2d-103.35870988571858!3d20.675463505122472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b137659278b3%3A0xc604925cc03e8ad1!2zRWwgYmHDumw!5e0!3m2!1ses!2smx!4v1656369158405!5m2!1ses!2smx"
         width="400"
         height="300"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        style="border: 0px"
       ></iframe>
     </section>
 
-    <section class="contacto">
-      <!-- Aún no sé en qué lugar posicionar el formulario, así que o puse aquó como una sección más -->
-      <form>
-        <fieldset>
-          <legend>Contáctanos para adquirir nuestros productos</legend>
-          <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" />
-          </div>
-
-          <div>
-            <h4>Género</h4>
-            <label for="hombre">Hombre</label>
-            <input type="radio" name="genero" id="hombre" />
-          </div>
-
-          <div>
-            <label for="mujer">Mujer</label>
-            <input type="radio" name="genero" id="mujer" />
-          </div>
-
-          <div>
-            <label for="correo">email</label>
-            <input type="email" id="correo" />
-          </div>
-
-          <div>
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" />
-          </div>
-
-          <div>
-            <label for="desplegable">Elije el producto</label>
-            <select id="">
-              <option value="">Agenda</option>
-              <option value="">Taza</option>
-              <option value="">Separador</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
-          </div>
-
-          <div>
-            <h4>Quiero recibir promociones</h4>
-            <label for="opcion1">si</label>
-            <input type="checkbox" id="opcion1" />
-            <label for="opcion2">no</label>
-            <input type="checkbox" id="opcion2" />
-          </div>
-
-          <div>
-            <input type="submit" value="Enviar formulario" />
-            <input type="reset" value="Limpiar formulario" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-
-    <footer>
-      <p>Copyright &copy; 2022</p>
-    </footer>
+    <footer><p>Copyright © 2022</p></footer>
   </body>
 </html>

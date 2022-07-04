@@ -10,6 +10,7 @@ import Tattoo from './Views/Tattoo'
 import Gallery from './Views/Gallery'
 // stylesheet
 import './index.css'
+import Contact from "./Views/Contact";
 
 const root = ReactDOM.createRoot(document.body)
 
@@ -21,6 +22,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="tattoo" element={<Tattoo />} />
         </Route>
