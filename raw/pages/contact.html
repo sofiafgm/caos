@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="lista-navegacion">
+          <li><a href="/" class="">Inicio</a></li>
+          <li><a href="/pages/about.html" class="">¿Quiénes somos?</a></li>
+          <li><a href="/pages/products.html" class="">Productos</a></li>
+          <li>
+            <a href="/" class=""
+              ><img alt="Un caos organizado" src="svgs/logo.svg" class="logo"
+            /></a>
+          </li>
+          <li><a href="/pages/gallery.html" class="">Galería</a></li>
+          <li><a href="/pages/tattoo.html" class="">Tatuajes</a></li>
+          <li><a href="/pages/contact.html" class="active" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-redes">
+      <ul class="lista-redes">
+        <li>
+          <a href="https://www.instagram.com/uncaosorganizado/"
+            ><img alt="Instagram" src="/svgs/ig.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/uncaosorganizado/"
+            ><img alt="Facebook" src="/svgs/fb.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.titok.com/uncaosorganizado/"
+            ><img alt="TikTok" src="/svgs/tk.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/uncaosorganizado/"
+            ><img alt="Youtube" src="/svgs/yt.svg"
+          /></a>
+        </li>
+      </ul>
+    </section>
+    <section class="contacto">
+      <form>
+        <fieldset>
+          <legend>Contáctanos para adquirir nuestros productos</legend>
+          <div><label for="nombre">Nombre</label><input type="text" id="nombre" /></div>
+          <div>
+            <h4>Género</h4>
+            <label for="hombre">Hombre</label><input type="radio" id="hombre" name="genero" />
+          </div>
+          <div><label for="mujer">Mujer</label><input type="radio" id="mujer" name="genero" /></div>
+          <div><label for="correo">email</label><input type="email" id="correo" /></div>
+          <div><label for="telefono">Telefono</label><input type="tel" id="telefono" /></div>
+          <div>
+            <label for="desplegable">Elige el producto</label
+            ><select id="desplegable">
+              <option value="" selected>Agenda</option>
+              <option value="">Taza</option>
+              <option value="">Separador</option>
+            </select>
+          </div>
+          <div>
+            <label for="comentarios">Comentarios</label
+            ><textarea cols="30" id="comentarios" name="" rows="10"></textarea>
+          </div>
+          <div>
+            <h4>Quiero recibir promociones</h4>
+            <label for="opcion1">si</label><input type="checkbox" id="opcion1" /><label
+              for="opcion2"
+              >no</label
+            ><input type="checkbox" id="opcion2" />
+          </div>
+          <div>
+            <input type="submit" value="Enviar formulario" /><input
+              type="reset"
+              value="Limpiar formulario"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <footer><p>Copyright © 2022</p></footer>
+  </body>
+</html>

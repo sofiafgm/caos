@@ -20,11 +20,11 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="about.html" element={<About />} />
-          <Route path="products.html" element={<Products />} />
-          <Route path="contact.html" element={<Contact />} />
-          <Route path="gallery.html" element={<Gallery />} />
-          <Route path="tattoo.html" element={<Tattoo />} />
+          <Route path="pages/about.html" element={<About />} />
+          <Route path="pages/products.html" element={<Products />} />
+          <Route path="pages/contact.html" element={<Contact />} />
+          <Route path="pages/gallery.html" element={<Gallery />} />
+          <Route path="pages/tattoo.html" element={<Tattoo />} />
         </Route>
       </Routes>
     </BrowserRouter>

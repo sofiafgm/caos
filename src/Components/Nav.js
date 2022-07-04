@@ -8,13 +8,13 @@ const Nav = () => (
         <NavLink to="/">Inicio</NavLink>
       </li>
       <li>
-        <NavLink to="about">¿Quiénes somos?</NavLink>
+        <NavLink to="pages/about.html">¿Quiénes somos?</NavLink>
       </li>
       <li>
-        <NavLink to="products">Productos</NavLink>
+        <NavLink to="pages/products.html">Productos</NavLink>
       </li>
       <li>
-        <NavLink to="products">
+        <NavLink to="/">
           <img
             className="logo"
             src={process.env.PUBLIC_URL + 'svgs/logo.svg'}
@@ -23,13 +23,13 @@ const Nav = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink to="gallery">Galería</NavLink>
+        <NavLink to="pages/gallery.html">Galería</NavLink>
       </li>
       <li>
-        <NavLink to="tattoo">Tatuajes</NavLink>
+        <NavLink to="pages/tattoo.html">Tatuajes</NavLink>
       </li>
       <li>
-        <NavLink to="contact">Contacto</NavLink>
+        <NavLink to="pages/contact.html">Contacto</NavLink>
       </li>
     </ul>
   </nav>
