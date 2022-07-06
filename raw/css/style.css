@@ -91,6 +91,12 @@ footer p {
     justify-content: flex-start;
     color: white;
     font-family: 'Shadows Into Light', cursive;
+    margin: 20px;
+}
+
+.locations p {
+    margin: 15px 15px 15px 30px;
+    padding: 10px;
 }
 
 .contacto {
