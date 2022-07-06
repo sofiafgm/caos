@@ -28,3 +28,4 @@ yarn-error.log*
 
 # intelij settings
 /.idea
+/.vscode

@@ -1,1 +1,105 @@
-/*Aquí no hay nada, checar src/index.css para ver los estilos del sitio*/
+body {
+    margin: 0;
+    background-color: #333333;
+}
+
+header {
+    margin: 0;
+}
+
+h1 {
+    color: red;
+}
+
+nav {
+    background-color: black;
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
+}
+
+.lista-navegacion {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-navegacion li {
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+.lista-navegacion li a {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
+}
+
+.section-redes {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.lista-redes {
+    margin: 0px;
+    padding: 0;
+}
+
+.lista-redes li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.lista-redes img {
+    height: 32px;
+    width: 32px;
+}
+
+.banner-img {
+    background-image: url("../images/oso.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.locations {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 20px;
+}
+
+.locations p {
+    margin: 15px 15px 15px 30px;
+    padding: 10px;
+}
+
+.contacto {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}

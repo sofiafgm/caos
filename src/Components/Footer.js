@@ -1,6 +1,4 @@
 import React from 'react'
-import SellPointMap from './SellPointMap'
-import ContactForm from './ContactForm'
 
 const Footer = () => (
   <footer>

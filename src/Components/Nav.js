@@ -1,35 +1,35 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
 
 const Nav = () => (
   <nav>
     <ul className="lista-navegacion">
       <li>
-        <NavLink to="/">Inicio</NavLink>
+        <a href="/">Inicio</a>
       </li>
       <li>
-        <NavLink to="pages/about.html">¿Quiénes somos?</NavLink>
+        <a href="pages/about.html">¿Quiénes somos?</a>
       </li>
       <li>
-        <NavLink to="pages/products.html">Productos</NavLink>
+        <a href="../pages/products.html">Productos</a>
       </li>
       <li>
-        <NavLink to="/">
+        <a href="/">
           <img
             className="logo"
             src={process.env.PUBLIC_URL + 'svgs/logo.svg'}
             alt="Un caos organizado"
           />
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink to="pages/gallery.html">Galería</NavLink>
+        <a href="pages/gallery.html">Galería</a>
       </li>
       <li>
-        <NavLink to="pages/tattoo.html">Tatuajes</NavLink>
+        <a href="pages/tattoo.html">Tatuajes</a>
       </li>
       <li>
-        <NavLink to="pages/contact.html">Contacto</NavLink>
+        <a href="pages/contact.html">Contacto</a>
       </li>
     </ul>
   </nav>
