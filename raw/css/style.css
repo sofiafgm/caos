@@ -1,24 +1,37 @@
-body {
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "redes"
+    "content"
+    "footer"
+    grid-template-columns: 20% auto 15%;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh;
+    margin: 0;	
+ }
+
+ body {
     margin: 0;
     background-color: #333333;
 }
 
 header {
+    grid-area: header ;
     margin: 0;
-}
-
-h1 {
-    color: red;
 }
 
 nav {
     background-color: black;
     margin: 0;
+    
 }
 
 footer {
+    grid-area: footer;
     margin: 0;
-    padding: 10px;
+    padding: 30px;
     background-color: black;
     color: white;
     font-family: 'Shadows Into Light', cursive;
@@ -29,41 +42,59 @@ footer p {
     text-align: right;
 }
 
+.text {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.titles {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: larger;
+    font-weight: bold;
+}
+
 .lista-navegacion {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
 .lista-navegacion li {
     list-style: none;
-    display: inline-block;
-    padding: 30px;
+    padding: 0;
 }
 
 .lista-navegacion li a {
     color: white;
     font-family: 'Amatic SC', cursive;
-    font-size: x-large;
+    font-size: larger;
     text-decoration: none;
     font-weight: bold;
 }
 
+.lista-navegacion li a:hover {
+    color: white;
+    opacity: 0.4;
+}
+
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     opacity: 0.8;
 }
 
 .section-redes {
+    grid-area: redes;
     display: flex;
     justify-content: flex-end;
     background-color: white;
 }
 
 .lista-redes {
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
@@ -72,10 +103,61 @@ footer p {
     display: inline-block;
 }
 
-
 .lista-redes img {
     height: 32px;
     width: 32px;
+}
+
+.content {
+    grid-area: content;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.lista-navegacion {
+    display: grid;
+    grid-template-areas: 
+    "menu-1 menu-2 menu-3";
+    grid-template-columns: 1fr 76px 1fr;
+}
+
+.lista-navegacion li {
+    padding: 20px 0 30px 0;
+}
+
+.lista-navegacion li a {
+    font-size: xx-large;
+}
+
+.menu-1 {
+    grid-area: menu-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.menu-2 {
+    grid-area: menu-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-3 {
+    grid-area: menu-3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
 }
 
 .banner-img {
@@ -89,8 +171,6 @@ footer p {
 .locations {
     display: flex;
     justify-content: flex-start;
-    color: white;
-    font-family: 'Shadows Into Light', cursive;
     margin: 20px;
 }
 
@@ -99,7 +179,26 @@ footer p {
     padding: 10px;
 }
 
-.contacto {
-    color: white;
-    font-family: 'Shadows Into Light', cursive;
+.section-contact {
+    display: grid;
+    grid-template-areas:
+    "img-contact . form-contact";
+    grid-template-columns: 1fr 30px 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.form-contact {
+    grid-area: form-contact;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.img-contact {
+    grid-area: img-contact;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 }

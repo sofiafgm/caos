@@ -18,17 +18,22 @@
     <header>
       <nav>
         <ul class="lista-navegacion">
-          <li><a aria-current="page" class="active" href="index.html">Inicio</a></li>
-          <li><a href="pages/about.html">¿Quiénes somos?</a></li>
-          <li><a href="pages/products.html">Productos</a></li>
+          <div class="menu-1">
+            <li><a aria-current="page" class="active" href="index.html">Inicio</a></li>
+            <li><a href="pages/about.html">¿Quiénes somos?</a></li>
+          </div>
+          <div class="menu-2">
           <li>
             <a href="index.html"
-              ><img class="logo" src="svgs/logo.svg" alt="Un caos organizado"
+              ><img class="logo" src="svgs/logo.svg" alt="Logo un caos organizado"
             /></a>
           </li>
+        </div>
+        <div class="menu-3">
+          <li><a href="pages/products.html">Productos</a></li>
           <li><a href="pages/gallery.html">Galería</a></li>
-          <li><a href="pages/tattoo.html">Tatuajes</a></li>
           <li><a href="pages/contact.html">Contacto</a></li>
+        </div>
         </ul>
       </nav>
     </header>
@@ -61,8 +66,8 @@
     <section class="banner-img"></section>
 
     <section class="locations">
-      <h4>Encuéntranos en:</h4>
-      <p>
+      <p class="titles">Encuéntranos en:</p>
+      <p class="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid id, qui quidem
         molestias, fugiat recusandae ab? Ipsa corrupti veniam voluptatibus.
       </p>
@@ -75,7 +80,7 @@
         referrerpolicy="no-referrer-when-downgrade"
         style="border: 0px"
       ></iframe>
-      <p>
+      <p class="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid id, qui quidem
         molestias, fugiat recusandae ab? Ipsa corrupti veniam voluptatibus.
       </p>
@@ -90,6 +95,8 @@
       ></iframe>
     </section>
 
-    <footer><p>Copyright © 2022</p></footer>
+    <footer>
+      <p>Copyright © 2022</p>
+    </footer>
   </body>
 </html>
