@@ -13,88 +13,82 @@
     <title>Contact</title>
     <link href="../css/style.css" rel="stylesheet" />
   </head>
+
   <body>
     <header>
       <nav>
         <ul class="lista-navegacion">
-          <li><a href="../index.html" class="">Inicio</a></li>
-          <li><a href="about.html" class="">¿Quiénes somos?</a></li>
-          <li><a href="products.html" class="">Productos</a></li>
-          <li>
-            <a href="../index.html" class=""
-              ><img alt="Un caos organizado" src="../svgs/logo.svg" class="logo"
-            /></a>
-          </li>
-          <li><a href="gallery.html" class="">Galería</a></li>
-          <li><a href="tattoo.html" class="">Tatuajes</a></li>
-          <li><a href="contact.html" class="active" aria-current="page">Contacto</a></li>
+          <div class="menu-1">
+            <li><a href="../index.html" class="">Inicio</a></li>
+            <li>
+              <a href="about.html" class="active" aria-current="page">¿Quiénes somos?</a>
+            </li>
+          </div>
+          <div class="menu-2">
+            <li>
+              <a href="../index.html" class=""
+                ><img alt="Un caos organizado" src="../svgs/logo.svg" class="logo"
+              /></a>
+            </li>
+          </div>
+          <div class="menu-3">
+            <li><a href="products.html" class="">Productos</a></li>
+            <li><a href="gallery.html" class="">Galería</a></li>
+            <li><a href="contact.html" class="">Contacto</a></li>
+          </div>
         </ul>
       </nav>
     </header>
-    <section class="section-redes">
-      <ul class="lista-redes">
-        <li>
-          <a href="https://www.instagram.com/uncaosorganizado/"
-            ><img alt="Instagram" src="../svgs/ig.svg"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/uncaosorganizado/"
-            ><img alt="Facebook" src="../svgs/fb.svg"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.titok.com/uncaosorganizado/"
-            ><img alt="TikTok" src="../svgs/tk.svg"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/uncaosorganizado/"
-            ><img alt="Youtube" src="../svgs/yt.svg"
-          /></a>
-        </li>
-      </ul>
-    </section>
-    <section class="contacto">
-      <form>
-        <fieldset>
-          <legend>Contáctanos para adquirir nuestros productos</legend>
-          <div><label for="nombre">Nombre</label><input type="text" id="nombre" /></div>
-          <div>
-            <h4>Género</h4>
-            <label for="hombre">Hombre</label><input type="radio" id="hombre" name="genero" />
-          </div>
-          <div><label for="mujer">Mujer</label><input type="radio" id="mujer" name="genero" /></div>
-          <div><label for="correo">email</label><input type="email" id="correo" /></div>
-          <div><label for="telefono">Telefono</label><input type="tel" id="telefono" /></div>
-          <div>
-            <label for="desplegable">Elige el producto</label
-            ><select id="desplegable">
-              <option value="" selected>Agenda</option>
-              <option value="">Taza</option>
-              <option value="">Separador</option>
-            </select>
-          </div>
-          <div>
-            <label for="comentarios">Comentarios</label
-            ><textarea cols="30" id="comentarios" name="" rows="10"></textarea>
-          </div>
-          <div>
-            <h4>Quiero recibir promociones</h4>
-            <label for="opcion1">si</label><input type="checkbox" id="opcion1" /><label
-              for="opcion2"
-              >no</label
-            ><input type="checkbox" id="opcion2" />
-          </div>
-          <div>
-            <input type="submit" value="Enviar formulario" /><input
-              type="reset"
-              value="Limpiar formulario"
-            />
-          </div>
-        </fieldset>
-      </form>
-    </section>
+
+    <div id="content">
+      <section class="section-redes">
+        <ul class="lista-redes">
+          <li>
+            <a href="https://www.instagram.com/uncaosorganizado/"
+              ><img alt="Instagram" src="../svgs/ig.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/uncaosorganizado/"
+              ><img alt="Facebook" src="../svgs/fb.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://vm.tiktok.com/ZMND4HE5D/"><img alt="TikTok" src="../svgs/tk.svg" /></a>
+          </li>
+          <li>
+            <a href="https://youtube.com/channel/UCLNAMju5gtRDfbFgOSAlh2w"
+              ><img alt="Youtube" src="../svgs/yt.svg"
+            /></a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="section-contact">
+        <img class="img-contact" src="../images/contact.jpg" alt="Agenda un caos organizado" />
+        <section class="form-contact content">
+          <form>
+            <fieldset>
+              <legend class="titles">Contáctanos para adquirir nuestros productos</legend>
+              <div><label for="nombre">Nombre</label><input type="text" id="nombre" /></div>
+              <div><label for="telefono">Telefono</label><input type="tel" id="telefono" /></div>
+              <div><label for="email">e-mail</label><input type="email" id="email" /></div>
+              <div>
+                <label for="comentarios">Comentarios</label
+                ><textarea cols="30" id="comentarios" name="" rows="10"></textarea>
+              </div>
+              <div>
+                <input type="submit" value="Enviar formulario" /><input
+                  type="reset"
+                  value="Limpiar formulario"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
+
     <footer><p>Copyright © 2022</p></footer>
   </body>
 </html>

@@ -76,7 +76,7 @@ const checkPaths = async (originalPath, filePath) => {
 
     if (fs.existsSync(path.normalize(fileDir + newPath))) {
       console.log('***','substituted', originalPath, 'for', newPath, 'on', filePath)
-      return `"${newPath}"`
+      return invertSlashes(`"${newPath}"`)
     }
   }
 
@@ -89,11 +89,13 @@ const checkPaths = async (originalPath, filePath) => {
   if (fs.existsSync(newPath)) {
     newPath = path.relative(path.resolve(fileDir), newPath)
     console.log('***','substituted', originalPath, 'for', newPath, 'on', filePath)
-    return `"${newPath}"`
+    return invertSlashes(`"${newPath}"`)
   }
 
   console.log('***','no substitution found for', originalPath, 'on', filePath)
-  return `"${originalPath}"`
+  return invertSlashes(`"${originalPath}"`)
 }
+
+const invertSlashes = string => string.replace(/\\/g, '/')
 
 getHTMLs(buildDir)
