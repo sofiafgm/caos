@@ -1,31 +1,31 @@
 #grilla {
     display: grid;
     grid-template-areas:
-    "header"
-    "redes"
-    "content"
-    "footer"
-    grid-template-columns: 20% auto 15%;
+        "header"
+        "redes"
+        "content"
+        "footer"
+        grid-template-columns: 20% auto 15%;
     row-gap: 10px;
     column-gap: 10px;
     height: 100vh;
-    margin: 0;	
- }
+    margin: 0;
+}
 
- body {
+body {
     margin: 0;
     background-color: #333333;
 }
 
 header {
-    grid-area: header ;
+    grid-area: header;
     margin: 0;
 }
 
 nav {
     background-color: black;
     margin: 0;
-    
+
 }
 
 footer {
@@ -114,91 +114,106 @@ footer p {
 }
 
 
+@media screen and (max-width: 767px) {
+    /* HELPERS */
+
+    .desktop-only {
+        display: none;
+    }
+    /* ed of HELPERS*/
+
+}
 
 @media screen and (min-width: 768px) {
 
-.lista-navegacion {
-    display: grid;
-    grid-template-areas: 
-    "menu-1 menu-2 menu-3";
-    grid-template-columns: 1fr 76px 1fr;
-}
+    /* HELPERS */
+    .mobile-only {
+        display: none;
+    }
+    /* end of HELPERS*/
 
-.lista-navegacion li {
-    padding: 20px 0 30px 0;
-}
+    .lista-navegacion {
+        display: grid;
+        grid-template-areas:
+            "menu-1 menu-2 menu-3";
+        grid-template-columns: 1fr 76px 1fr;
+    }
 
-.lista-navegacion li a {
-    font-size: xx-large;
-}
+    .lista-navegacion li {
+        padding: 20px 0 30px 0;
+    }
 
-.menu-1 {
-    grid-area: menu-1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: center;
-}
+    .lista-navegacion li a {
+        font-size: xx-large;
+    }
 
-.menu-2 {
-    grid-area: menu-2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    .menu-1 {
+        grid-area: menu-1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+    }
 
-.menu-3 {
-    grid-area: menu-3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: center;
-}
+    .menu-2 {
+        grid-area: menu-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-.logo {
-    width: 64px;
-    height: 64px;
-}
+    .menu-3 {
+        grid-area: menu-3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+    }
 
-.banner-img {
-    background-image: url("../images/oso.jpg");
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    margin-bottom: 10px;
-}
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
 
-.locations {
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px;
-}
+    .banner-img {
+        background-image: url("../images/oso.jpg");
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
 
-.locations p {
-    margin: 15px 15px 15px 30px;
-    padding: 10px;
-}
+    .locations {
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px;
+    }
 
-.section-contact {
-    display: grid;
-    grid-template-areas:
-    "img-contact . form-contact";
-    grid-template-columns: 1fr 30px 1fr;
-    margin: 0;
-    padding: 0;
-}
+    .locations p {
+        margin: 15px 15px 15px 30px;
+        padding: 10px;
+    }
 
-.form-contact {
-    grid-area: form-contact;
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-}
+    .section-contact {
+        display: grid;
+        grid-template-areas:
+            "img-contact . form-contact";
+        grid-template-columns: 1fr 30px 1fr;
+        margin: 0;
+        padding: 0;
+    }
 
-.img-contact {
-    grid-area: img-contact;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
+    .form-contact {
+        grid-area: form-contact;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .img-contact {
+        grid-area: img-contact;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
