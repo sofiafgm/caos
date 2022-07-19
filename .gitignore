@@ -29,3 +29,6 @@ yarn-error.log*
 # intelij settings
 /.idea
 /.vscode
+
+# original project
+/raw
