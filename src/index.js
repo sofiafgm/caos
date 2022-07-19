@@ -6,10 +6,7 @@ import App from './App'
 import Home from './Views/Home'
 import About from './Views/About'
 import Products from './Views/Products'
-import Tattoo from './Views/Tattoo'
 import Gallery from './Views/Gallery'
-// stylesheet
-import './index.css'
 import Contact from './Views/Contact'
 
 const rootElement = document.getElementById('root')
@@ -25,7 +22,6 @@ root.render(
           <Route path="pages/products.html" element={<Products />} />
           <Route path="pages/contact.html" element={<Contact />} />
           <Route path="pages/gallery.html" element={<Gallery />} />
-          <Route path="pages/tattoo.html" element={<Tattoo />} />
         </Route>
       </Routes>
     </BrowserRouter>
