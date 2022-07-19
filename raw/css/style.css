@@ -1,20 +1,18 @@
-#grilla {
+body {
+    margin: 0;
+    background-color: #333333;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
     display: grid;
     grid-template-areas:
         "header"
         "redes"
         "content"
-        "footer"
-        grid-template-columns: 20% auto 15%;
-    row-gap: 10px;
+        "footer";
+    row-gap: 0;
     column-gap: 10px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-}
-
-body {
-    margin: 0;
-    background-color: #333333;
 }
 
 header {
@@ -26,6 +24,12 @@ nav {
     background-color: black;
     margin: 0;
 
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 footer {
@@ -42,11 +46,6 @@ footer p {
     text-align: right;
 }
 
-.text {
-    color: white;
-    font-family: 'Shadows Into Light', cursive;
-}
-
 .titles {
     color: white;
     font-family: 'Amatic SC', cursive;
@@ -54,17 +53,15 @@ footer p {
     font-weight: bold;
 }
 
+
 .lista-navegacion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
 .lista-navegacion li {
     list-style: none;
-    padding: 0;
 }
 
 .lista-navegacion li a {
@@ -113,24 +110,59 @@ footer p {
 
 }
 
+.banner-img {
+    background-image: url("../images/oso.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.img-contact {
+    width: 100%;
+    background-image: url("../images/contact.jpg");
+    height: 200px;
+    background-size: cover;
+    padding: 10px;
+}
+
+.img-caos {
+    width: 100%;
+    background-image: url("../images/caos.jpg");
+    height: 200px;
+    background-size: cover;
+}
+
+.img-taily {
+    width: 100%;
+    background-image: url("../images/taily.jpg");
+    height: 200px;
+    background-size: cover;
+}
+
+.form-contact {
+    grid-area: form-contact;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
 
 @media screen and (max-width: 767px) {
-    /* HELPERS */
-
     .desktop-only {
         display: none;
     }
-    /* ed of HELPERS*/
-
 }
 
 @media screen and (min-width: 768px) {
-
-    /* HELPERS */
     .mobile-only {
         display: none;
     }
-    /* end of HELPERS*/
+
+    .titles {
+        padding: 10px;
+
+    }
 
     .lista-navegacion {
         display: grid;
@@ -176,11 +208,7 @@ footer p {
     }
 
     .banner-img {
-        background-image: url("../images/oso.jpg");
-        width: 100%;
         height: 600px;
-        background-size: cover;
-        margin-bottom: 10px;
     }
 
     .locations {
@@ -192,6 +220,41 @@ footer p {
     .locations p {
         margin: 15px 15px 15px 30px;
         padding: 10px;
+    }
+
+    .section-about {
+        display: grid;
+        grid-template-areas:
+            "content-aboutcaos . img-caos"
+            "img-taily . content-about";
+        grid-template-columns: 1fr 50px 1fr;
+        grid-row: inherit;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .img-caos {
+        grid-area: img-caos;
+        height: 450px;
+    }
+
+    .content-aboutcaos {
+        grid-area: content-aboutcaos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-taily {
+        grid-area: img-taily;
+        height: 450px;
+    }
+
+    .content-about {
+        grid-area: content-about;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .section-contact {
@@ -212,8 +275,6 @@ footer p {
 
     .img-contact {
         grid-area: img-contact;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+        height: 600px;
     }
 }
